@@ -1,4 +1,4 @@
-import Person from "./person.js";
+import Person from "../writeReadToJSON/person.js";
 import fs from "fs";
 
 let max = new Person("Max", 22);
