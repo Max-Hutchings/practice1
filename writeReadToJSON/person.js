@@ -5,8 +5,12 @@ export default class Person{
     #name;
     #age;
 
-    constructor(name, age){
-        this.#id = Person.#ids ++;
+    constructor(name, age, id){
+        if (id){
+            this.#id = id
+        } else{
+            this.#id = Person.#ids ++;
+        }
         this.#name = name;
         this.#age = age;
     }
